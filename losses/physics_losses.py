@@ -1,8 +1,5 @@
 """Differentiable AC network equations and physics-informed OPF losses.
 
-All powers use the per-unit convention unless explicitly documented.  The
-functions accept arbitrary leading batch dimensions and never detach tensors,
-so they can be used both for numerical validation and model training.
 """
 
 from __future__ import annotations
