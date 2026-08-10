@@ -1,4 +1,4 @@
-"""Run the reviewer-requested multi-seed benchmark and all evaluations."""
+"""Run the multi-seed benchmark and all evaluations."""
 
 from __future__ import annotations
 
