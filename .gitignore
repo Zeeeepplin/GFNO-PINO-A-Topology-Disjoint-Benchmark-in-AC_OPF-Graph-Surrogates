@@ -17,3 +17,6 @@ tmp/**
 .vscode/
 .ipynb_checkpoints/
 
+# Ignore large submission artifacts
+output/submission/*.zip
+
