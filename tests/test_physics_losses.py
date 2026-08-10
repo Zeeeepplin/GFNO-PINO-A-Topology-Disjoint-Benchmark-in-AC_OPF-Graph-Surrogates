@@ -1,8 +1,5 @@
 """Numerical validation of differentiable AC equations.
 
-These tests intentionally use an independently evaluated explicit G/B formula
-and a two-bus analytic branch model. They do not merely compare a function to
-itself through another wrapper.
 """
 
 from __future__ import annotations
