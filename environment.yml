@@ -1,0 +1,22 @@
+name: topology-pino-opf
+channels:
+  - pytorch
+  - conda-forge
+dependencies:
+  - python=3.12
+  - pytorch>=2.2
+  - numpy>=1.26
+  - scipy>=1.11
+  - pandas>=2.1
+  - pyyaml>=6
+  - pandapower>=2.14
+  - networkx>=3.2
+  - h5py>=3.10
+  - tensorboard>=2.15
+  - matplotlib>=3.8
+  - seaborn>=0.13
+  - tqdm>=4.66
+  - pytest>=8
+  - pip
+  - pip:
+      - wandb>=0.17

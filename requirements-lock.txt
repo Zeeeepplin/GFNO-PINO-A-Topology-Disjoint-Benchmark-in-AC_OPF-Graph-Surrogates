@@ -1,0 +1,15 @@
+# Exact Python package snapshot used for the reported Windows/CUDA benchmark.
+# Python 3.12.13; install the matching PyTorch CUDA 12.6 wheel for the platform.
+torch==2.13.0+cu126
+numpy==2.4.6
+scipy==1.18.0
+pandas==2.3.3
+PyYAML==6.0.3
+pandapower==3.5.4
+networkx==3.6.1
+h5py==3.16.0
+tensorboard==2.21.0
+matplotlib==3.11.1
+seaborn==0.13.2
+tqdm==4.69.1
+pytest==8.4.2

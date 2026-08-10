@@ -1,0 +1,33 @@
+{
+  "power_balance": {
+    "count": 60,
+    "unit": "per-unit active/reactive power",
+    "evaluation_tolerance": 0.001
+  },
+  "voltage_box": {
+    "count": 30,
+    "unit": "per-unit voltage",
+    "evaluation_tolerance": 1e-06
+  },
+  "generator_box": {
+    "count": 24,
+    "unit": "per-unit active/reactive power",
+    "evaluation_tolerance": 1e-06
+  },
+  "thermal_two_ended": {
+    "rated_active_branches": 41,
+    "unit": "per-unit apparent power",
+    "evaluation_tolerance": 1e-06
+  },
+  "angle_difference": {
+    "active_branches": 41,
+    "minimum_rad": -6.283185307179586,
+    "maximum_rad": 6.283185307179586,
+    "evaluation_tolerance": 1e-06
+  },
+  "reference_angle": {
+    "count": 1,
+    "unit": "radian",
+    "hard_enforced": true
+  }
+}

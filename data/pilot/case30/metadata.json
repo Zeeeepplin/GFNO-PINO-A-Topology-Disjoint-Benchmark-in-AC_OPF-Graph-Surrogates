@@ -1,0 +1,893 @@
+{
+  "case": "case30",
+  "seed": 2026,
+  "created_unix_s": 1785170673.0663965,
+  "generation_runtime_s": 59.84103049999976,
+  "n_topologies": 12,
+  "n_samples": 132,
+  "n_failed": 154,
+  "n_requested_samples": 144,
+  "max_scenario_attempts_per_topology": 60,
+  "topology_sample_counts": {
+    "base": 12,
+    "line_0_out": 12,
+    "line_1_out": 12,
+    "line_2_out": 12,
+    "line_3_out": 12,
+    "line_4_out": 12,
+    "line_5_out": 12,
+    "line_6_out": 12,
+    "line_7_out": 12,
+    "line_8_out": 12,
+    "line_9_out": 0,
+    "line_10_out": 12
+  },
+  "split_by_topology": {
+    "base": "train",
+    "line_1_out": "train",
+    "line_9_out": "train",
+    "line_0_out": "train",
+    "line_6_out": "train",
+    "line_8_out": "train",
+    "line_3_out": "train",
+    "line_5_out": "train",
+    "line_2_out": "val",
+    "line_7_out": "test",
+    "line_4_out": "test",
+    "line_10_out": "test"
+  },
+  "solver_requested": "powermodels",
+  "renewable_source": "synthetic-diurnal",
+  "config": {
+    "benchmark_tier": "pilot",
+    "case": "case30",
+    "seed": 2026,
+    "output_dir": "data/pilot",
+    "include_base_topology": true,
+    "max_topologies": 12,
+    "scenarios_per_topology": 12,
+    "run_dc_baseline": true,
+    "load_perturbation": {
+      "min": 0.7,
+      "max": 1.3,
+      "correlation_length": 3.0
+    },
+    "renewable": {
+      "capacity_fraction": 0.2,
+      "csv_path": null
+    },
+    "split": {
+      "fractions": [
+        0.7,
+        0.15,
+        0.15
+      ]
+    },
+    "solver": {
+      "backend": "powermodels",
+      "julia_executable": "tmp/julia/julia-1.10.11/bin/julia.exe",
+      "julia_project": "julia",
+      "timeout_s": 600,
+      "max_iter": 1000
+    },
+    "model": {
+      "bus_channels": 8,
+      "edge_channels": 10,
+      "width": 64,
+      "depth": 4,
+      "chebyshev_order": 3,
+      "dropout": 0.05
+    },
+    "training": {
+      "batch_size": 16,
+      "warm_start_epochs": 12,
+      "physics_epochs": 18,
+      "learning_rate": 0.001,
+      "weight_decay": 1e-05,
+      "grad_clip": 1.0,
+      "num_workers": 0,
+      "seed": 2026
+    }
+  },
+  "failed_samples": [
+    {
+      "topology_id": "base",
+      "scenario_attempt": 0,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "base",
+      "scenario_attempt": 3,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "base",
+      "scenario_attempt": 4,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "base",
+      "scenario_attempt": 5,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "base",
+      "scenario_attempt": 6,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "base",
+      "scenario_attempt": 7,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "base",
+      "scenario_attempt": 8,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "base",
+      "scenario_attempt": 9,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "base",
+      "scenario_attempt": 10,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "base",
+      "scenario_attempt": 12,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "base",
+      "scenario_attempt": 13,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "base",
+      "scenario_attempt": 18,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "base",
+      "scenario_attempt": 19,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "base",
+      "scenario_attempt": 20,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "base",
+      "scenario_attempt": 21,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "base",
+      "scenario_attempt": 22,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "base",
+      "scenario_attempt": 25,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_0_out",
+      "scenario_attempt": 0,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_0_out",
+      "scenario_attempt": 3,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_0_out",
+      "scenario_attempt": 8,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_0_out",
+      "scenario_attempt": 10,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_0_out",
+      "scenario_attempt": 11,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_0_out",
+      "scenario_attempt": 13,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_0_out",
+      "scenario_attempt": 15,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_1_out",
+      "scenario_attempt": 1,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_1_out",
+      "scenario_attempt": 3,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_1_out",
+      "scenario_attempt": 4,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_1_out",
+      "scenario_attempt": 5,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_1_out",
+      "scenario_attempt": 9,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_1_out",
+      "scenario_attempt": 16,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_2_out",
+      "scenario_attempt": 2,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_2_out",
+      "scenario_attempt": 3,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_2_out",
+      "scenario_attempt": 6,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_2_out",
+      "scenario_attempt": 8,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_2_out",
+      "scenario_attempt": 9,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_2_out",
+      "scenario_attempt": 14,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_2_out",
+      "scenario_attempt": 16,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_3_out",
+      "scenario_attempt": 0,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_3_out",
+      "scenario_attempt": 1,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_3_out",
+      "scenario_attempt": 2,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_3_out",
+      "scenario_attempt": 3,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_3_out",
+      "scenario_attempt": 6,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_3_out",
+      "scenario_attempt": 7,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_3_out",
+      "scenario_attempt": 8,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_3_out",
+      "scenario_attempt": 18,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_3_out",
+      "scenario_attempt": 19,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_4_out",
+      "scenario_attempt": 1,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_4_out",
+      "scenario_attempt": 3,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_4_out",
+      "scenario_attempt": 5,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_4_out",
+      "scenario_attempt": 7,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_4_out",
+      "scenario_attempt": 9,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_4_out",
+      "scenario_attempt": 12,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_4_out",
+      "scenario_attempt": 17,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_5_out",
+      "scenario_attempt": 4,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_5_out",
+      "scenario_attempt": 5,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_5_out",
+      "scenario_attempt": 6,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_5_out",
+      "scenario_attempt": 8,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_5_out",
+      "scenario_attempt": 9,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_5_out",
+      "scenario_attempt": 14,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_5_out",
+      "scenario_attempt": 15,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_5_out",
+      "scenario_attempt": 16,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_5_out",
+      "scenario_attempt": 17,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_5_out",
+      "scenario_attempt": 18,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_5_out",
+      "scenario_attempt": 20,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_5_out",
+      "scenario_attempt": 21,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_5_out",
+      "scenario_attempt": 22,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_5_out",
+      "scenario_attempt": 23,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_6_out",
+      "scenario_attempt": 1,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_6_out",
+      "scenario_attempt": 2,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_6_out",
+      "scenario_attempt": 5,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_6_out",
+      "scenario_attempt": 10,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_6_out",
+      "scenario_attempt": 12,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_6_out",
+      "scenario_attempt": 13,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_6_out",
+      "scenario_attempt": 14,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_6_out",
+      "scenario_attempt": 17,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_6_out",
+      "scenario_attempt": 19,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_6_out",
+      "scenario_attempt": 20,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_7_out",
+      "scenario_attempt": 2,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_7_out",
+      "scenario_attempt": 3,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_7_out",
+      "scenario_attempt": 5,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_7_out",
+      "scenario_attempt": 8,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_7_out",
+      "scenario_attempt": 14,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_7_out",
+      "scenario_attempt": 15,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_8_out",
+      "scenario_attempt": 5,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_8_out",
+      "scenario_attempt": 9,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_8_out",
+      "scenario_attempt": 10,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_8_out",
+      "scenario_attempt": 13,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_8_out",
+      "scenario_attempt": 14,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_8_out",
+      "scenario_attempt": 16,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_8_out",
+      "scenario_attempt": 17,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_9_out",
+      "scenario_attempt": 0,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_9_out",
+      "scenario_attempt": 1,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_9_out",
+      "scenario_attempt": 2,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_9_out",
+      "scenario_attempt": 3,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_9_out",
+      "scenario_attempt": 4,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_9_out",
+      "scenario_attempt": 5,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_9_out",
+      "scenario_attempt": 6,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_9_out",
+      "scenario_attempt": 7,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_9_out",
+      "scenario_attempt": 8,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_9_out",
+      "scenario_attempt": 9,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_9_out",
+      "scenario_attempt": 10,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_9_out",
+      "scenario_attempt": 11,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_9_out",
+      "scenario_attempt": 12,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_9_out",
+      "scenario_attempt": 13,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_9_out",
+      "scenario_attempt": 14,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_9_out",
+      "scenario_attempt": 15,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_9_out",
+      "scenario_attempt": 16,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_9_out",
+      "scenario_attempt": 17,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_9_out",
+      "scenario_attempt": 18,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_9_out",
+      "scenario_attempt": 19,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_9_out",
+      "scenario_attempt": 20,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_9_out",
+      "scenario_attempt": 21,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_9_out",
+      "scenario_attempt": 22,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_9_out",
+      "scenario_attempt": 23,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_9_out",
+      "scenario_attempt": 24,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_9_out",
+      "scenario_attempt": 25,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_9_out",
+      "scenario_attempt": 26,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_9_out",
+      "scenario_attempt": 27,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_9_out",
+      "scenario_attempt": 28,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_9_out",
+      "scenario_attempt": 29,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_9_out",
+      "scenario_attempt": 30,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_9_out",
+      "scenario_attempt": 31,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_9_out",
+      "scenario_attempt": 32,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_9_out",
+      "scenario_attempt": 33,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_9_out",
+      "scenario_attempt": 34,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_9_out",
+      "scenario_attempt": 35,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_9_out",
+      "scenario_attempt": 36,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_9_out",
+      "scenario_attempt": 37,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_9_out",
+      "scenario_attempt": 38,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_9_out",
+      "scenario_attempt": 39,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_9_out",
+      "scenario_attempt": 40,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_9_out",
+      "scenario_attempt": 41,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_9_out",
+      "scenario_attempt": 42,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_9_out",
+      "scenario_attempt": 43,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_9_out",
+      "scenario_attempt": 44,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_9_out",
+      "scenario_attempt": 45,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_9_out",
+      "scenario_attempt": 46,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_9_out",
+      "scenario_attempt": 47,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_9_out",
+      "scenario_attempt": 48,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_9_out",
+      "scenario_attempt": 49,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_9_out",
+      "scenario_attempt": 50,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_9_out",
+      "scenario_attempt": 51,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_9_out",
+      "scenario_attempt": 52,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_9_out",
+      "scenario_attempt": 53,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_9_out",
+      "scenario_attempt": 54,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_9_out",
+      "scenario_attempt": 55,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_9_out",
+      "scenario_attempt": 56,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_9_out",
+      "scenario_attempt": 57,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_9_out",
+      "scenario_attempt": 58,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_9_out",
+      "scenario_attempt": 59,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_10_out",
+      "scenario_attempt": 0,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_10_out",
+      "scenario_attempt": 11,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_10_out",
+      "scenario_attempt": 13,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_10_out",
+      "scenario_attempt": 14,
+      "termination": "LOCALLY_INFEASIBLE"
+    }
+  ],
+  "split_topology_counts": {
+    "train": 8,
+    "val": 1,
+    "test": 3
+  },
+  "usable_topology_counts": {
+    "train": 7,
+    "val": 1,
+    "test": 3
+  },
+  "topology_artifact_schema": {
+    "edge_features": [
+      "Re(Yff)",
+      "Im(Yff)",
+      "Re(Yft)",
+      "Im(Yft)",
+      "Re(Ytt)",
+      "Im(Ytt)",
+      "Re(Ytf)",
+      "Im(Ytf)",
+      "status",
+      "rate_pu"
+    ],
+    "branch_component_type": {
+      "0": "line",
+      "1": "transformer",
+      "2": "other"
+    }
+  }
+}

@@ -1,0 +1,359 @@
+{
+  "case": "case57",
+  "seed": 2026,
+  "created_unix_s": 1785170895.1386278,
+  "generation_runtime_s": 209.93541679999908,
+  "n_topologies": 12,
+  "n_samples": 144,
+  "n_failed": 46,
+  "n_requested_samples": 144,
+  "max_scenario_attempts_per_topology": 60,
+  "topology_sample_counts": {
+    "base": 12,
+    "line_0_out": 12,
+    "line_1_out": 12,
+    "line_2_out": 12,
+    "line_3_out": 12,
+    "line_4_out": 12,
+    "line_5_out": 12,
+    "line_6_out": 12,
+    "line_7_out": 12,
+    "line_8_out": 12,
+    "line_9_out": 12,
+    "line_10_out": 12
+  },
+  "split_by_topology": {
+    "base": "train",
+    "line_1_out": "train",
+    "line_9_out": "train",
+    "line_0_out": "train",
+    "line_6_out": "train",
+    "line_8_out": "train",
+    "line_3_out": "train",
+    "line_5_out": "train",
+    "line_2_out": "val",
+    "line_7_out": "test",
+    "line_4_out": "test",
+    "line_10_out": "test"
+  },
+  "solver_requested": "powermodels",
+  "renewable_source": "synthetic-diurnal",
+  "config": {
+    "benchmark_tier": "pilot",
+    "case": "case57",
+    "seed": 2026,
+    "output_dir": "data/pilot",
+    "include_base_topology": true,
+    "max_topologies": 12,
+    "scenarios_per_topology": 12,
+    "run_dc_baseline": true,
+    "load_perturbation": {
+      "min": 0.65,
+      "max": 1.35,
+      "correlation_length": 3.5
+    },
+    "renewable": {
+      "capacity_fraction": 0.2,
+      "csv_path": null
+    },
+    "split": {
+      "fractions": [
+        0.7,
+        0.15,
+        0.15
+      ]
+    },
+    "case_adjustments": {
+      "voltage_bounds": [
+        0.8,
+        1.1
+      ]
+    },
+    "solver": {
+      "backend": "powermodels",
+      "julia_executable": "tmp/julia/julia-1.10.11/bin/julia.exe",
+      "julia_project": "julia",
+      "timeout_s": 600,
+      "max_iter": 1000
+    },
+    "model": {
+      "bus_channels": 8,
+      "edge_channels": 10,
+      "width": 64,
+      "depth": 4,
+      "chebyshev_order": 3,
+      "dropout": 0.05
+    },
+    "training": {
+      "batch_size": 12,
+      "warm_start_epochs": 12,
+      "physics_epochs": 18,
+      "learning_rate": 0.001,
+      "weight_decay": 1e-05,
+      "grad_clip": 1.0,
+      "num_workers": 0,
+      "seed": 2026
+    }
+  },
+  "failed_samples": [
+    {
+      "topology_id": "base",
+      "scenario_attempt": 1,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "base",
+      "scenario_attempt": 2,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "base",
+      "scenario_attempt": 7,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "base",
+      "scenario_attempt": 8,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_0_out",
+      "scenario_attempt": 10,
+      "termination": "ITERATION_LIMIT"
+    },
+    {
+      "topology_id": "line_1_out",
+      "scenario_attempt": 3,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_2_out",
+      "scenario_attempt": 7,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_2_out",
+      "scenario_attempt": 11,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_3_out",
+      "scenario_attempt": 0,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_3_out",
+      "scenario_attempt": 2,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_3_out",
+      "scenario_attempt": 6,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_3_out",
+      "scenario_attempt": 8,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_3_out",
+      "scenario_attempt": 9,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_3_out",
+      "scenario_attempt": 13,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_3_out",
+      "scenario_attempt": 16,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_4_out",
+      "scenario_attempt": 0,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_4_out",
+      "scenario_attempt": 1,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_4_out",
+      "scenario_attempt": 7,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_6_out",
+      "scenario_attempt": 1,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_6_out",
+      "scenario_attempt": 5,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_6_out",
+      "scenario_attempt": 6,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_6_out",
+      "scenario_attempt": 11,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_6_out",
+      "scenario_attempt": 12,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_6_out",
+      "scenario_attempt": 15,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_6_out",
+      "scenario_attempt": 16,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_7_out",
+      "scenario_attempt": 0,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_7_out",
+      "scenario_attempt": 3,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_7_out",
+      "scenario_attempt": 4,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_7_out",
+      "scenario_attempt": 5,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_7_out",
+      "scenario_attempt": 6,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_7_out",
+      "scenario_attempt": 7,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_7_out",
+      "scenario_attempt": 8,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_7_out",
+      "scenario_attempt": 10,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_7_out",
+      "scenario_attempt": 11,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_7_out",
+      "scenario_attempt": 15,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_7_out",
+      "scenario_attempt": 17,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_7_out",
+      "scenario_attempt": 18,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_7_out",
+      "scenario_attempt": 19,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_8_out",
+      "scenario_attempt": 7,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_9_out",
+      "scenario_attempt": 1,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_9_out",
+      "scenario_attempt": 2,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_9_out",
+      "scenario_attempt": 5,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_9_out",
+      "scenario_attempt": 8,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_9_out",
+      "scenario_attempt": 9,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_9_out",
+      "scenario_attempt": 13,
+      "termination": "LOCALLY_INFEASIBLE"
+    },
+    {
+      "topology_id": "line_10_out",
+      "scenario_attempt": 5,
+      "termination": "LOCALLY_INFEASIBLE"
+    }
+  ],
+  "split_topology_counts": {
+    "train": 8,
+    "val": 1,
+    "test": 3
+  },
+  "usable_topology_counts": {
+    "train": 8,
+    "val": 1,
+    "test": 3
+  },
+  "topology_artifact_schema": {
+    "edge_features": [
+      "Re(Yff)",
+      "Im(Yff)",
+      "Re(Yft)",
+      "Im(Yft)",
+      "Re(Ytt)",
+      "Im(Ytt)",
+      "Re(Ytf)",
+      "Im(Ytf)",
+      "status",
+      "rate_pu"
+    ],
+    "branch_component_type": {
+      "0": "line",
+      "1": "transformer",
+      "2": "other"
+    }
+  }
+}

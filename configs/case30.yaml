@@ -1,0 +1,33 @@
+case: case30
+seed: 2026
+output_dir: data/processed
+include_base_topology: true
+scenarios_per_topology: 100
+run_dc_baseline: true
+load_perturbation:
+  min: 0.70
+  max: 1.30
+  correlation_length: 3.0
+renewable:
+  capacity_fraction: 0.20
+  csv_path: null  # set to a numeric NREL-derived CSV; fallback is tagged synthetic
+split:
+  fractions: [0.70, 0.15, 0.15]
+solver:
+  backend: pandapower  # use powermodels for publication IPOPT labels
+model:
+  bus_channels: 8
+  edge_channels: 10
+  width: 128
+  depth: 6
+  chebyshev_order: 4
+  dropout: 0.05
+training:
+  batch_size: 32
+  warm_start_epochs: 100
+  physics_epochs: 200
+  learning_rate: 0.001
+  weight_decay: 0.00001
+  grad_clip: 1.0
+  num_workers: 0
+  seed: 2026

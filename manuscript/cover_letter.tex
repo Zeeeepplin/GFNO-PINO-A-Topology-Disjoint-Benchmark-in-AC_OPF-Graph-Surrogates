@@ -1,0 +1,53 @@
+\documentclass[10pt]{article}
+\usepackage[margin=22mm]{geometry}
+\usepackage{microtype}
+\pagestyle{empty}
+\setlength{\parskip}{0.45em}
+\setlength{\parindent}{0pt}
+
+\begin{document}
+
+\hfill 29 July 2026
+
+Editor\\
+\emph{Electric Power Systems Research}
+
+Dear Editor,
+
+Please consider our manuscript, ``GFNO-PINO: A Topology-Disjoint Benchmark
+Isolating Physics Fine-Tuning, Topology Conditioning, and Spectral Filtering
+in AC-OPF Graph Surrogates,'' for publication in \emph{Electric Power Systems
+Research}.
+
+This is a controlled ablation and benchmark study. Its central finding is that
+physics-informed fine-tuning substantially improves the power-balance accuracy
+of graph-based AC-OPF surrogates under the executed protocol, whereas explicit
+topology conditioning and spectral graph filtering---architecturally plausible
+choices commonly assumed useful---are not confirmed to improve accuracy in
+matched-parameter, topology-disjoint comparisons. We report this negative
+result explicitly because it directly informs surrogate-model design choices.
+
+Across five training seeds and four IEEE systems, paired physics fine-tuning
+reduces mean sample-maximum power-balance mismatch by 63.4--89.3\%, with all
+20 paired seed effects positive. Parameter-matched topology-blind and
+spatial-GNN baselines nevertheless match or outperform the full model on three
+of four systems.
+
+We do not present the model as a production AC-OPF solver. Every learned model
+has 0\% feasibility under the declared proxy, and the manuscript keeps this
+limitation prominent. It also distinguishes raw GPU forward-pass latency from
+end-to-end feasible-solution time and states that operational use requires
+independent verification and feasibility restoration.
+
+Thank you for your consideration.
+
+Sincerely,
+
+\vspace{0.5em}
+Roshan Kumar Sharma\\
+Ujjwal Prasad Dahal\\
+Department of Electrical Engineering\\
+Purwanchal Campus, Institute of Engineering\\
+Tribhuvan University, Dharan, Nepal
+
+\end{document}

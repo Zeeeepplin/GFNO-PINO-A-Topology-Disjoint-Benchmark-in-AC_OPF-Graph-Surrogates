@@ -1,0 +1,13 @@
+topology_id,outaged_line,split,converged_samples
+base,,train,12
+line_0_out,0,train,12
+line_10_out,10,test,12
+line_1_out,1,train,12
+line_2_out,2,val,12
+line_3_out,3,train,12
+line_4_out,4,test,12
+line_5_out,5,train,12
+line_6_out,6,train,12
+line_7_out,7,test,12
+line_8_out,8,train,12
+line_9_out,9,train,12
